@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cr6boq7kdhytf"]
+
+[ext_resource type="Script" uid="uid://dsfao0rd027sc" path="res://parallax_background.gd" id="1_p0pli"]
+[ext_resource type="Texture2D" uid="uid://du3b6w4jyh6us" path="res://Resim/bgpng.png" id="2_fgyff"]
+
+[node name="Back" type="Node2D" unique_id=88289044]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1860545149]
+script = ExtResource("1_p0pli")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=478648245]
+motion_mirroring = Vector2(1920, 1080)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=733307500]
+position = Vector2(960.49994, 539.5)
+scale = Vector2(9.594999, 5.994445)
+texture = ExtResource("2_fgyff")

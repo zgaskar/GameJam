@@ -148,6 +148,7 @@ size = Vector2(74, 31.75)
 
 [node name="Seagull" type="AnimatedSprite2D" unique_id=589119909]
 rotation = -1.5707964
+scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_16g43")
 animation = &"flipped"
 autoplay = "flipped"
@@ -159,8 +160,9 @@ collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=586313809]
 texture_filter = 1
-position = Vector2(-193, 55)
+position = Vector2(129.33334, -76)
 shape = SubResource("RectangleShape2D_k5nhv")
+metadata/_edit_lock_ = true
 
 [node name="Timer" type="Timer" parent="." unique_id=1434229383]
 

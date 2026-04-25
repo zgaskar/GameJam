@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drnp4xvj7ctd8"
-path="res://.godot/imported/icon.svg-dcdd7c92d6d5ba79bc3d2faf5ddca15e.ctex"
+uid="uid://b7bsltvtgnuvt"
+path="res://.godot/imported/Untitled 20-2402.png-6e8e66d309d4f55a397df8e62fb8c6e9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resim/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-dcdd7c92d6d5ba79bc3d2faf5ddca15e.ctex"]
+source_file="res://Görseller/Untitled 20-2402.png"
+dest_files=["res://.godot/imported/Untitled 20-2402.png-6e8e66d309d4f55a397df8e62fb8c6e9.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

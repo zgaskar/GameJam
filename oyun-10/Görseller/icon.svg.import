@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drnp4xvj7ctd8"
-path="res://.godot/imported/icon.svg-dcdd7c92d6d5ba79bc3d2faf5ddca15e.ctex"
+uid="uid://bdpisjfalteyr"
+path="res://.godot/imported/icon.svg-7cc17133dea3d76e2d4a93911053dee5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resim/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-dcdd7c92d6d5ba79bc3d2faf5ddca15e.ctex"]
+source_file="res://Görseller/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-7cc17133dea3d76e2d4a93911053dee5.ctex"]
 
 [params]
 

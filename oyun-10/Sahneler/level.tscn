@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://sef8plhhsw7y"]
+
+[ext_resource type="Script" uid="uid://b0btn46tyscpk" path="res://Betikler/parallax_layer.gd" id="1_gltmp"]
+[ext_resource type="Texture2D" uid="uid://dqe3p78ys66a3" path="res://Görseller/bgpng.png" id="2_1ykbf"]
+[ext_resource type="Script" uid="uid://o08fj5h3ueil" path="res://Betikler/character_body_2d.gd" id="3_gltmp"]
+[ext_resource type="Texture2D" uid="uid://b7bsltvtgnuvt" path="res://Görseller/Untitled 20-2402.png" id="4_be6vl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_denxu"]
+radius = 14.0
+height = 36.0
+
+[node name="Level" type="Node2D" unique_id=307417760]
+metadata/_edit_lock_ = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1393286487]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1003797814]
+motion_mirroring = Vector2(1920, 1080)
+script = ExtResource("1_gltmp")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1426685603]
+texture_filter = 1
+position = Vector2(960, 540)
+scale = Vector2(9.6, 6)
+texture = ExtResource("2_1ykbf")
+metadata/_edit_lock_ = true
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=400992926]
+position = Vector2(957, 530)
+script = ExtResource("3_gltmp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1524696890]
+position = Vector2(8, 22)
+shape = SubResource("CapsuleShape2D_denxu")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1898531405]
+position = Vector2(8.999994, 15)
+scale = Vector2(1.9374996, 2.0625)
+texture = ExtResource("4_be6vl")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=92024545]

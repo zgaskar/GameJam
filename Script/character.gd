@@ -7,6 +7,8 @@ func _physics_process(delta):
 		velocity.x = speed
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -speed
+	elif Input.is_action_pressed("ui_dash"):
+		position.x=position.x+500
 	else:
 		velocity.x = 0
 

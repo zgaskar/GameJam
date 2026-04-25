@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqjv475yljndo"]
+
+[ext_resource type="Texture2D" uid="uid://drnp4xvj7ctd8" path="res://Resim/icon.svg" id="1_xi34w"]
+[ext_resource type="Script" uid="uid://3r4bvbgtkq0e" path="res://Script/seagull.gd" id="2_uypld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k5nhv"]
+size = Vector2(128, 129)
+
+[node name="Seagull" type="Sprite2D"]
+texture = ExtResource("1_xi34w")
+script = ExtResource("2_uypld")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_k5nhv")

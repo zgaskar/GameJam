@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://jdev2rj07cvk"]
+
+[ext_resource type="Script" uid="uid://c7a5w7oc41mvt" path="res://Setting/level.gd" id="1_hju7p"]
+[ext_resource type="Texture2D" uid="uid://du3b6w4jyh6us" path="res://Resim/bgpng.png" id="3_c34gg"]
+[ext_resource type="PackedScene" uid="uid://ccihqregau88y" path="res://Script/character.tscn" id="3_w4gh0"]
+[ext_resource type="PackedScene" uid="uid://dqjv475yljndo" path="res://Script/seagull.tscn" id="4_c34gg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4gh0"]
+size = Vector2(145, 1491.5)
+
+[node name="level" type="Node2D" unique_id=1405577538]
+script = ExtResource("1_hju7p")
+metadata/_edit_lock_ = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1183295041]
+texture_filter = 1
+position = Vector2(1117, 583)
+scale = Vector2(20, 13.812)
+texture = ExtResource("3_c34gg")
+metadata/_edit_lock_ = true
+
+[node name="Character" parent="." unique_id=82327886 instance=ExtResource("3_w4gh0")]
+position = Vector2(1139, 558)
+scale = Vector2(5, 5)
+metadata/_edit_lock_ = true
+
+[node name="Border1" type="StaticBody2D" parent="." unique_id=1012419290]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border1" unique_id=12897480]
+position = Vector2(-67, 750.25)
+shape = SubResource("RectangleShape2D_w4gh0")
+
+[node name="Border2" type="StaticBody2D" parent="." unique_id=322430799]
+collision_layer = 4
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Border2" unique_id=975443054]
+position = Vector2(1996, 750)
+shape = SubResource("RectangleShape2D_w4gh0")
+
+[node name="Timer" type="Timer" parent="." unique_id=2059653757]
+
+[node name="Seagull" parent="." unique_id=1732836029 instance=ExtResource("4_c34gg")]
+position = Vector2(240, 542)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

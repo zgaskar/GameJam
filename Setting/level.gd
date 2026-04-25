@@ -1,11 +1,9 @@
 extends Node2D
 
-var seagull =preload("res://Script/seagull.tscn")
-
-func _ready():
-	pass
-
+var SeagullScene = preload("res://Script/seagull.tscn")
 
 func _on_timer_timeout() -> void:
-	var instance =seagull.instantiate()
+	var instance = SeagullScene.instantiate()
 	add_child(instance)
+func _ready():
+	$Seagull.play()
